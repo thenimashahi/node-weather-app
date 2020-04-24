@@ -1,0 +1,12 @@
+   <h3 id="logo">Weather App</h3>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+      </fieldset>
+    </div>
+{{#if temp}}
+<p> The temperature in <span class="city">{{city}}</span> is: <span class="celsius">{{temp}}</span> degrees celsius.</p>
+{{/if}}
